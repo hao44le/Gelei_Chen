@@ -23,7 +23,7 @@ class EntryViewController: UIViewController,UITableViewDataSource,UITableViewDel
     
     //summary
     
-    let summary_text :[String] = ["Hi! My name is Gelei, I'm a sphormore at Purdue University studying Computer Science specializing in Software Engineering. I am looking to offer my skills as an internship software engineer!","I am extremely passionate in all fields of CS, espcially developing solutions for mobile applications. Before I start to program, I always spend a lot of time in designing the user interface because every detail matters."]
+    let summary_text :[String] = ["Hi! My name is Gelei, I'm a sophomore at Purdue University studying Computer Science specializing in Software Engineering. I am looking to offer my skills as an internship software engineer!","I am extremely passionate in all fields of CS, espcially developing solutions for mobile applications. Before I start to program, I always spend a lot of time in designing the user interface because every detail matters."]
     
     
     
