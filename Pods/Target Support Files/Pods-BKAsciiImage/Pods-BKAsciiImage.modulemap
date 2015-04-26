@@ -1,0 +1,6 @@
+framework module BKAsciiImage {
+  umbrella header "Pods-BKAsciiImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

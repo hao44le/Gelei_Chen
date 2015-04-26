@@ -1,0 +1,22 @@
+PODS:
+  - ARChromeActivity (1.0.2)
+  - BKAsciiImage (0.1.1)
+  - KINWebBrowser (1.1.0):
+    - ARChromeActivity (= 1.0.2)
+    - TUSafariActivity (= 1.0.2)
+  - Persei (1.0.1)
+  - TUSafariActivity (1.0.2)
+
+DEPENDENCIES:
+  - BKAsciiImage
+  - KINWebBrowser
+  - Persei (~> 1.0.1)
+
+SPEC CHECKSUMS:
+  ARChromeActivity: 6488aedc8dd0624b103ea8caf6218e52692aaf77
+  BKAsciiImage: 9d672106097b74c937dd8a5ed24bfa0fb8d549b1
+  KINWebBrowser: 6aeaf6f34a99ed31a49eebf5457581718f08961e
+  Persei: 52d90b6f825162e81df1f0ee5559cfe5eee47475
+  TUSafariActivity: 32e3e5dc9123e5533a42d41e1c3246d12911a4a2
+
+COCOAPODS: 0.36.4

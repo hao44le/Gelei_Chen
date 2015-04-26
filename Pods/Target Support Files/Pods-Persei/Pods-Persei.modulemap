@@ -1,0 +1,6 @@
+framework module Persei {
+  umbrella header "Pods-Persei-umbrella.h"
+
+  export *
+  module * { export * }
+}
