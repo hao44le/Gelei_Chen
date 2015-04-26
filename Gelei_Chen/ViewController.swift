@@ -1,4 +1,10 @@
-// For License please refer to LICENSE file in the root of Persei project
+//
+//  ViewController.swift
+//  Gelei_Chen
+//
+//  Created by Gelei Chen on 15/4/25.
+//  Copyright (c) 2015 Geilei_Chen. All rights reserved.
+//
 
 import UIKit
 import QuartzCore
@@ -38,15 +44,18 @@ class ViewController: UITableViewController,MenuViewDelegate,UIPopoverPresentati
         switch indexPath.row {
         case 2:
             let webBrowser = KINWebBrowserViewController.webBrowser()
-            self.navigationController?.pushViewController(webBrowser, animated: true)
+            
             webBrowser.showsPageTitleInNavigationBar = true
             webBrowser.actionButtonHidden = true
             webBrowser.tintColor = UIColor.blackColor()
             webBrowser.loadURL(NSURL(string: "https://drive.google.com/file/d/0BzSMfqxlsM0wc3Q4STRRdEhGZkE/view?usp=sharing"))
+            self.navigationController?.pushViewController(webBrowser, animated: true)
         case 3:
             self.performSegueWithIdentifier("toEducation", sender: self)
         case 4:
             self.performSegueWithIdentifier("toExperience", sender: self)
+        case 5:
+            self.performSegueWithIdentifier("toSkill", sender: self)
         default:
             self.performSegueWithIdentifier("toEntry", sender: self)
             
@@ -115,7 +124,7 @@ class ViewController: UITableViewController,MenuViewDelegate,UIPopoverPresentati
         
         
     }
-    
+    /*
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         self.view.layoutIfNeeded()
         println("viewWillTransitionTosize")
@@ -139,7 +148,7 @@ class ViewController: UITableViewController,MenuViewDelegate,UIPopoverPresentati
             })
         }
 
-    }
+    }*/
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toPopup"{
             let dvc = segue.destinationViewController as! MenuViewController

@@ -3,7 +3,7 @@
 //  Gelei_Chen
 //
 //  Created by Gelei Chen on 15/4/23.
-//  Copyright (c) 2015年 Geilei_Chen. All rights reserved.
+//  Copyright (c) 2015 Geilei_Chen. All rights reserved.
 //
 
 import UIKit

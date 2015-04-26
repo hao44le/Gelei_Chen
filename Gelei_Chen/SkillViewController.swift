@@ -1,22 +1,27 @@
 //
-//  ExperienceViewController.swift
+//  SkillViewController.swift
 //  Gelei_Chen
 //
-//  Created by Gelei Chen on 15/4/25.
+//  Created by Gelei Chen on 15/4/26.
 //  Copyright (c) 2015 Geilei_Chen. All rights reserved.
 //
 
 import UIKit
 
-class ExperienceViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class SkillViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!{
+        didSet{
+            tableView.allowsSelection = false
+        }
+    }
     
+    //skill
     
-    
-    //experience
-    
-    let experience_text1 :[String] = ["Software Engineering Intern","At PayPal Singapore (Singapore)","PayPal iOS Team"]
-    let experience_text2 :[String] = ["iOS App Developer & Campus Leader","At American Culture Education (Los Angeles, CA)","Education startup by Pomona College graduate student at Claremont, CA","Create iOS App named: VirtualU, which provides college Information for students and offers virtual tour for students."]
+    let skill_proficient :[String] = ["Swift","iOS","C/C++","Java","HTML/CSS","Git","UNIX","Linux","Windows","Mac"]
+    let detail_proficient :[String] = ["My favorite language","The best","GTK/Linux GUI","Learn to do Android","Web development","Source Control","All Purdue CS Lab machine","Working on GTK C GUI","I prefer Mac","Yes, he likes me"]
+    let skill_familiar : [String] = ["Android","Bash","Objective-C","R","Socket.io"]
+    let detail_familiar : [String] = ["So much pain.Purdue CS course required.>_<.","Required by CS department","I can understand it","Learn from Statisticis class","Awesome library for iOS network"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,39 +32,42 @@ class ExperienceViewController: UIViewController,UITableViewDataSource,UITableVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
-        //experience
-
+        //skill
+        
         if indexPath.section == 0{
-            cell.textLabel?.text = experience_text1[indexPath.row]
+            cell.textLabel?.text = skill_proficient[indexPath.row]
+            cell.detailTextLabel?.text = detail_proficient[indexPath.row]
         } else {
-            cell.textLabel?.text = experience_text2[indexPath.row]
+            cell.textLabel?.text = skill_familiar[indexPath.row]
+            cell.detailTextLabel?.text = detail_familiar[indexPath.row]
         }
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
-            return experience_text1.count
+            return skill_proficient.count
         } else {
-            return experience_text2.count
+            return skill_familiar.count
         }
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
         if section == 0{
-            cell.imageView?.image = UIImage(named: "paypal.jpg")
-            cell.textLabel?.text = "PayPal Singapore"
+            cell.imageView?.image = UIImage(named: "ios.png")
+            cell.textLabel?.text = "Proficient"
+            cell.detailTextLabel?.text = ":-) I am an iOS Developer"
         } else {
-            cell.imageView?.image = UIImage(named: "ace.png")
-            cell.textLabel?.text = "American Cultural Education"
+            cell.imageView?.image = UIImage(named: "oc.png")
+            cell.textLabel?.text = "Familiar"
+            cell.detailTextLabel?.text = "There is always more to learn"
         }
         
         return cell
@@ -68,6 +76,7 @@ class ExperienceViewController: UIViewController,UITableViewDataSource,UITableVi
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return CGFloat(50)
     }
+
     /*
     // MARK: - Navigation
 

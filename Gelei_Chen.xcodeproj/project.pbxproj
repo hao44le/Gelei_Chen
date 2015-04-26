@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		370ED6167ACAC26574CD22E8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E477C1A64DD9D25FDC82043 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C0095EEE1AED1D5900ED8151 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0095EED1AED1D5900ED8151 /* SkillViewController.swift */; };
 		C0336EB01AEB141B00C7DBFD /* UIImage+BKAscii.m in Sources */ = {isa = PBXBuildFile; fileRef = C0336EAC1AEB141B00C7DBFD /* UIImage+BKAscii.m */; };
 		C03AF7291AEABF2F00D42D8E /* ASCIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03AF7281AEABF2F00D42D8E /* ASCIViewController.swift */; };
 		C063450C1AEA89F200B3CE6F /* CCMCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C06344F81AEA89F200B3CE6F /* CCMCustomAnimation.m */; };
@@ -30,7 +31,6 @@
 		C09FACAB1AE9B8E60038AB55 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09FACAA1AE9B8E60038AB55 /* CustomTableViewCell.swift */; };
 		C0ABBDDD1AEB464700B7102F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0ABBDDC1AEB464700B7102F /* Images.xcassets */; };
 		C0B29A051AEB2D7800F0E534 /* JSImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B29A041AEB2D7800F0E534 /* JSImagePickerViewController.m */; };
-		C0C17A961AEC5B6A00F6620B /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C17A951AEC5B6A00F6620B /* EntryTableViewCell.swift */; };
 		C0C17A981AEC62A400F6620B /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C17A971AEC62A400F6620B /* EducationViewController.swift */; };
 		C0C17A9A1AEC74F800F6620B /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C17A991AEC74F800F6620B /* ExperienceViewController.swift */; };
 		C0F79E5C1AEB498D008E5912 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F79E5B1AEB498D008E5912 /* MenuViewController.swift */; };
@@ -56,6 +56,7 @@
 /* Begin PBXFileReference section */
 		6E477C1A64DD9D25FDC82043 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B675D29748AFD078E69C024C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C0095EED1AED1D5900ED8151 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		C0336EA41AEB141B00C7DBFD /* BKAsciiConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAsciiConverter.h; sourceTree = "<group>"; };
 		C0336EAB1AEB141B00C7DBFD /* UIImage+BKAscii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BKAscii.h"; sourceTree = "<group>"; };
 		C0336EAC1AEB141B00C7DBFD /* UIImage+BKAscii.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BKAscii.m"; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 		C0ABBDDC1AEB464700B7102F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C0B29A031AEB2D7800F0E534 /* JSImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSImagePickerViewController.h; sourceTree = "<group>"; };
 		C0B29A041AEB2D7800F0E534 /* JSImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSImagePickerViewController.m; sourceTree = "<group>"; };
-		C0C17A951AEC5B6A00F6620B /* EntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		C0C17A971AEC62A400F6620B /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 		C0C17A991AEC74F800F6620B /* ExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
 		C0F79E5B1AEB498D008E5912 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -187,8 +187,8 @@
 				C09FACAA1AE9B8E60038AB55 /* CustomTableViewCell.swift */,
 				C0C17A971AEC62A400F6620B /* EducationViewController.swift */,
 				C08525BF1AEA80C800CE35C3 /* EntryViewController.swift */,
-				C0C17A951AEC5B6A00F6620B /* EntryTableViewCell.swift */,
 				C0C17A991AEC74F800F6620B /* ExperienceViewController.swift */,
+				C0095EED1AED1D5900ED8151 /* SkillViewController.swift */,
 				C0F79E5B1AEB498D008E5912 /* MenuViewController.swift */,
 				C03AF7281AEABF2F00D42D8E /* ASCIViewController.swift */,
 			);
@@ -528,6 +528,7 @@
 				C06345101AEA89F200B3CE6F /* FXBlurView.m in Sources */,
 				C063450C1AEA89F200B3CE6F /* CCMCustomAnimation.m in Sources */,
 				C09FAC6F1AE92AED0038AB55 /* AppDelegate.swift in Sources */,
+				C0095EEE1AED1D5900ED8151 /* SkillViewController.swift in Sources */,
 				C0B29A051AEB2D7800F0E534 /* JSImagePickerViewController.m in Sources */,
 				C0336EB01AEB141B00C7DBFD /* UIImage+BKAscii.m in Sources */,
 				C06345111AEA89F200B3CE6F /* UIImage+ImageEffects.m in Sources */,
@@ -535,7 +536,6 @@
 				C0F79E5C1AEB498D008E5912 /* MenuViewController.swift in Sources */,
 				C063450D1AEA89F200B3CE6F /* CCMPopupAnimation.m in Sources */,
 				C0C17A981AEC62A400F6620B /* EducationViewController.swift in Sources */,
-				C0C17A961AEC5B6A00F6620B /* EntryTableViewCell.swift in Sources */,
 				C09FAC9A1AE92F3B0038AB55 /* CGRect+Extension.swift in Sources */,
 				C08525C01AEA80C800CE35C3 /* EntryViewController.swift in Sources */,
 				C06345121AEA89F200B3CE6F /* UIImage+screenshot.m in Sources */,

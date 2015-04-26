@@ -3,7 +3,7 @@
 //  Gelei_Chen
 //
 //  Created by Gelei Chen on 15/4/24.
-//  Copyright (c) 2015年 Geilei_Chen. All rights reserved.
+//  Copyright (c) 2015 Geilei_Chen. All rights reserved.
 //
 
 import UIKit
@@ -25,7 +25,6 @@ class EntryViewController: UIViewController,UITableViewDataSource,UITableViewDel
     
     let summary_text :[String] = ["Hi! My name is Gelei, I'm a sphormore at Purdue University studying Computer Science specializing in Software Engineering. I am looking to offer my skills as an internship software engineer!","I am extremely passionate in all fields of CS, espcially developing solutions for mobile applications. Before I start to program, I always spend a lot of time in designing the user interface because every detail matters."]
     
-    //skill
     
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -48,7 +47,7 @@ class EntryViewController: UIViewController,UITableViewDataSource,UITableViewDel
             
         //skill
         case "Skill":
-            break
+            return 2
         
         default:
             break

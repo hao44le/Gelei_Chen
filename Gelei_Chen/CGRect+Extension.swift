@@ -1,4 +1,10 @@
-// For License please refer to LICENSE file in the root of Persei project
+//
+//  CGRect+Extension.swift
+//  Gelei_Chen
+//
+//  Created by Gelei Chen on 15/4/25.
+//  Copyright (c) 2015 Geilei_Chen. All rights reserved.
+//
 
 import Foundation
 import CoreGraphics

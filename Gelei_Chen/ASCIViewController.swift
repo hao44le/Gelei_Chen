@@ -3,7 +3,7 @@
 //  Gelei_Chen
 //
 //  Created by Gelei Chen on 15/4/24.
-//  Copyright (c) 2015年 Geilei_Chen. All rights reserved.
+//  Copyright (c) 2015 Geilei_Chen. All rights reserved.
 //
 
 import UIKit
@@ -66,18 +66,62 @@ class ASCIViewController: UIViewController,UINavigationControllerDelegate,UIImag
     
     @IBAction func pickNewImage(sender: UIButton) {
         
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.allowsEditing = true
-        picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        self.presentViewController(picker, animated: true, completion: nil)
+        
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
+        
+        
+        
+        let goAction = UIAlertAction(title: "Photo Albums", style: .Default) { (action) in
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
+                let picker = UIImagePickerController()
+                picker.delegate = self
+                picker.allowsEditing = true
+                picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+                self.presentViewController(picker, animated: true, completion: nil)
+            } else {
+                UIAlertView(title: "Error", message: "Can not open Photo Albums", delegate: nil, cancelButtonTitle: "Close").show()
+            }
+            
+        }
+        
+        alertController.addAction(goAction)
+        
+        let OKAction = UIAlertAction(title: "Camera", style: .Default) { (action) in
+            if UIImagePickerController.isSourceTypeAvailable(
+                UIImagePickerControllerSourceType.Camera) {
+                    
+                    let imagePicker = UIImagePickerController()
+                    
+                    imagePicker.delegate = self
+                    imagePicker.sourceType =
+                        UIImagePickerControllerSourceType.Camera
+                    //imagePicker.mediaTypes = [kUTTypeImage as NSString]
+                    imagePicker.allowsEditing = false
+                    
+                    self.presentViewController(imagePicker, animated: true, 
+                        completion: nil)
+            } else {
+                UIAlertView(title: "Error", message: "Can not open Camera", delegate: nil, cancelButtonTitle: "Close").show()
+            }
+            
+        }
+        alertController.addAction(OKAction)
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+            
+            
+        }
+        alertController.addAction(cancelAction)
+        
+        self.presentViewController(alertController, animated: true) {
+            // ...
+        }
+        
+        alertController.view.tintColor = UIColor.blackColor()
+        
 
-        /*
-        let imagePicker = JSImagePickerViewController()
-        imagePicker.delegate = self
-        imagePicker.showImagePickerInController(self.navigationController)
-        //imagePicker.resignFirstResponder()
-        */
+
     }
     
     func imagePickerDidSelectImage(image: UIImage!) {
