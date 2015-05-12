@@ -18,8 +18,8 @@ class EntryViewController: UIViewController,UITableViewDataSource,UITableViewDel
         }
     }
     //basic info
-    let name :[String] = ["(765)-838-9835","Hao44le","Linkedin.com/in/geleichen","chen1474 @purdue.edu","Geleichen.me","321 Earhart Hall, First Street, West Lafayette, IN 47096"]
-    let image : [String] = ["iphone.png","github.png","linkedin.png","email.png","website.png","home.png"]
+    let name :[String] = ["Hao44le","Linkedin.com/in/geleichen","geleichen@hotmail.com","Geleichen.me","321 Earhart Hall, First Street, West Lafayette, IN 47096"]
+    let image : [String] = ["github.png","linkedin.png","email.png","website.png","home.png"]
     
     //summary
     
