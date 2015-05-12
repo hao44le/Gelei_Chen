@@ -4,4 +4,4 @@ Lucklily I won the scholarship.
 See this app in action:
 https://www.youtube.com/watch?v=xqIrK4H4JzQ
 
-![alt tag](https://drive.google.com/file/d/0BzSMfqxlsM0wRkZfZV9BdU1CM0k/view?usp=sharing)
+![ScreenShot](https://c2.staticflickr.com/6/5343/16952235424_229d66e850_z.jpg)
