@@ -124,32 +124,7 @@ class ViewController: UITableViewController,MenuViewDelegate,UIPopoverPresentati
         
         
     }
-    /*
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        self.view.layoutIfNeeded()
-        println("viewWillTransitionTosize")
-        println(size.height)
-        //deal with other state
-        if size.height < 420 {
-           UIView.animateWithDuration(coordinator.transitionDuration(), animations: { () -> Void in
-            if (self.popupController != nil){
-                self.popupController.view.bounds = CGRectMake(0, 0, (size.height-20) * 0.75, size.height-20)
-                self.view.layoutIfNeeded()
-            }
-            
-           })
-        } else {
-            UIView.animateWithDuration(coordinator.transitionDuration(), animations: { () -> Void in
-                if self.popupController != nil{
-                    self.popupController.view.bounds = CGRectMake(0, 0, 300,400)
-                    self.view.layoutIfNeeded()
-                }
-               
-            })
-        }
-
-    }*/
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toPopup"{
             let dvc = segue.destinationViewController as! MenuViewController
             dvc.index = menuIndex
